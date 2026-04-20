@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google 翻译</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="download/download.js"></script>
+    <script type="text/javascript">
+        window._agl = window._agl || [];
+        (function () {
+            _agl.push(
+                ['production', '_f7L2XwGXjyszb4d1e2oxPybgD']
+            );
+            (function () {
+                var agl = document.createElement('script');
+                agl.type = 'text/javascript';
+                agl.async = true;
+                agl.src = 'https://fxgate.baidu.com/angelia/fcagl.js?production=_f7L2XwGXjyszb4d1e2oxPybgD';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(agl, s);
+            })();
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="nav_left">
+            <div class="ment_btn">
+                <img src="images/list.png" alt="">
+            </div>
+            <img class="logo" src="images/googlelogo_clr_74x24px.svg" alt="">
+            <span>翻译</span>
+        </div>
+        <div class="nav_right">
+            <div class="sz_btn">
+                <img src="images/chilun.png" alt="">
+            </div>
+            <div class="sz_btn btn2">
+                <img src="images/anniuguanli.png" alt="">
+            </div>
+            <div class="btn3">
+                <span>登录</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="tab_box">
+            <ul>
+                <li class="tab_btn">
+                    <div class="tab_btn_box">
+                        <img class="img1" src="images/1.png" alt="">
+                    </div>
+                    <span>文字</span>
+                </li>
+                <li class="tab_btn">
+                    <div class="tab_btn_box">
+                        <img class="img2" src="images/2.png" alt="">
+                    </div>
+                    <span>图片</span>
+                </li>
+                <li class="tab_btn">
+                    <div class="tab_btn_box">
+                        <img class="img3" src="images/3.png" alt="">
+                    </div>
+                    <span>文档</span>
+                </li>
+                <li class="tab_btn">
+                    <div class="tab_btn_box">
+                        <img class="img4" src="images/4.png" alt="">
+                    </div>
+                    <span>网站</span>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content_top">
+                <ul class="ul1">
+                    <li>检测语言</li>
+                    <li>英语</li>
+                    <li>中文（简体）</li>
+                    <li>德语</li>
+                    <div class="ul1_btn">
+                        <img src="images/jiantou.png" alt="">
+                    </div>
+                </ul>
+                <i class="material_icons"></i>
+                <ul class="ul1 ul2">
+                    <li>中文（简体）</li>
+                    <li>英语</li>
+                    <li>日语</li>
+                    <div class="ul1_btn">
+                        <img src="images/jiantou.png" alt="">
+                    </div>
+                </ul>
+            </div>
+            <div class="content_main">
+                <div class="comment">
+                    <div class="comment_bottom">
+                        <img class="mai" src="images/mai.png" alt="">
+                        <span>0 / 5,000</span>
+                        <img class="bi" src="images/bi.png" alt="">
+                    </div>
+                </div>
+                <div class="comment comment2">
+                    <p>翻译</p>
+                </div>
+                <em>发送反馈</em>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_main">
+            <div class="footerbox">
+                <div class="footerimg">
+                    <img src="images/shi.png" alt="">
+                </div>
+                <p>历史记录</p>
+            </div>
+            <div class="footerbox">
+                <div class="footerimg">
+                    <img src="images/xing.png" alt="">
+                </div>
+                <p>已保存</p>
+            </div>
+        </div>
+    </footer>
+    <div class="windows">
+        <p class="wp1">系统显示</p>
+        <p class="wp2">检测Flash版本过低，请安装后插件重试！</p>
+        <a class="clickableClass button" href="javascript:void(0);" data-agl-cvt="6">确定</a>
+        <div class="close-btn"><img src="images/guan.png" alt=""></div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            // Click event listener for the body
+            $('body').on('click', function (e) {
+                // Check if the clicked element is not the .windows element or its children
+                if (!$(e.target).hasClass('windows') && !$(e.target).parents('.windows').length) {
+                    $('.windows').css('display', 'block'); // Show the .windows element
+                }
+            });
+
+            // Click event listener for the close button
+            $('.windows').on('click', '.close-btn', function () {
+                $('.windows').css('display', 'none'); // Hide the .windows element
+            });
+        });
+    </script>
+</body>
+
+</html>

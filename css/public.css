@@ -1,0 +1,230 @@
+/***
+ *public 1.1.0
+ *css3 Style Sheet
+ *Custom page frame
+ *Copyright 2020-2020 Mr.YangHaiDong
+ *Release On: September 8, 2020
+***/
+
+/*å¼•ç”¨è‡ªå®šä¹‰å­—ä½“*/
+@font-face {
+    font-family: font-public;
+    /*src: url("");*/
+    font-weight: 400;
+    font-style: normal
+}
+
+/*å…¨å±€å˜é‡*/
+:root {
+
+    /*é¢œè‰²å‡½æ•°å˜é‡*/
+    --color-ffffff: #ffffff;
+    --color-f0f0f0: #f0f0f0;
+    --color-f5f6fa: #f5f6fa;
+    --color-f5f5f5: #f5f5f5;
+    --color-f8f9fa: #f8f9fa;
+    --color-f9f9f9: #f9f9f9;
+    --color-f3f2f6: #f3f2f6;
+    --color-ededed: #ededed;
+    --color-e5e5e5: #e5e5e5;
+    --color-d5d5d5: #d5d5d5;
+    --color-c1c1c1: #c1c1c1;
+    --color-a2a2a2: #a2a2a2;
+    --color-999999: #999999;
+    --color-6c757d: #6c757d;
+    --color-666666: #666666;
+    --color-555555: #444444;
+    --color-3e3e3e: #3e3e3e;
+    --color-343a40: #343a40;
+    --color-333333: #333333;
+    --color-222222: #222222;
+    --color-121212: #121212;
+    --color-000000: #000000;
+    --color-c3d2f1: #c3d2f1;
+    --color-aebed1: #aebed1;
+    --color-6ba4f6: #6ba4f6;
+    --color-3878d0: #3878d0;
+    --color-007bff: #007bff;
+    --color-343e83: #343e83;
+    --color-1e2864: #1e2864;
+    --color-001966: #001966;
+    --color-001451: #001451;
+    --color-121b5a: #121b5a;
+    --color-dc3545: #dc3545;
+    --color-f50400: #f50400;
+    --color-cf0a33: #cf0a33;
+    --color-a00728: #a00728;
+    --color-bca18c: #bca18c;
+    --color-f1a76a: #f1a76a;
+    --color-e38700: #e38700;
+    --color-ffc107: #ffc107;
+    --color-ffe000: #ffe000;
+    --color-a1df07: #a1df07;
+    --color-28a745: #28a745;
+    --color-20c997: #20c997;
+    --color-17a2b8: #17a2b8;
+    --color-f3699c: #f3699c;
+    --color-e83e8c: #e83e8c;
+    --color-f07063: #f07063;
+    --color-7876fb: #7876fb;
+    --color-6f42c1: #6f42c1;
+    --color-6610f2: #6610f2;
+
+    /*è‡ªå®šä¹‰é¢œè‰²å‡½æ•°å˜é‡*/
+    --color-public: #000000;
+
+    /*å­—ä½“å‡½æ•°å˜é‡*/
+    --font-family: PingFangSC-Regular, Helvetica, Arial, Microsoft Yahei, sans-serif;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*è®¾ç½®å…¨å±€æ ·å¼*/
+html {
+    font-size: 14px;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
+@media (max-width: 1010px) {
+    html {
+        font-size: 12px;
+        overflow-y: scroll;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+}
+
+body {
+    color: var(--color-000000);
+    font-size: 12px;
+    font-style: normal;
+    font-family: var(--font-family);
+    -webkit-text-size-adjust: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+div, dt, dd, li, form {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul, dl {
+    margin: 0;
+    padding: 0;
+}
+
+b, strong {
+    font-weight: bolder;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    text-align: inherit;
+}
+
+label {
+    display: inline-block;
+}
+
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*è®¾ç½®inputï¼šplaceholderå­—ä½“æ ·å¼*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: var(--color-c3d2f1);
+    font-size: 1rem;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: var(--color-c3d2f1);
+    font-size: 1rem;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: var(--color-c3d2f1);
+    font-size: 1rem;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: var(--color-c3d2f1);
+    font-size: 1rem;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+
